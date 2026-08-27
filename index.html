@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>1Tracker</title>
+  <meta name="description" content="1Tracker — one place for everything you track. Weight first. Diet, training, and learning next. Designed for the gym.">
+  <meta name="theme-color" content="#E11D48">
+  <meta property="og:title" content="1Tracker">
+  <meta property="og:description" content="One place for everything you track. Starting with weight.">
+  <meta property="og:image" content="./app-icon.jpg">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/png" href="./favicon.png">
+  <link rel="apple-touch-icon" href="./apple-touch-icon.png">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <a class="nav-brand" href="#top" aria-label="1Tracker home">
+      <img src="./app-icon.jpg" alt="" width="32" height="32">
+      <span>1Tracker</span>
+    </a>
+    <nav class="nav-links" aria-label="Page">
+      <a href="#features">Features</a>
+      <a href="#next">Up next</a>
+    </nav>
+    <a class="btn btn-nav" href="#install">Get the app</a>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <p class="eyebrow reveal">Available on Android</p>
+      <h1 class="reveal">
+        One place.<br>
+        <span class="grad-text">Everything you track.</span>
+      </h1>
+      <p class="lede reveal">
+        1Tracker starts with weight — a full-screen weigh-in you can do in gloves.
+        Diet, training, and learning come next.
+      </p>
+      <div class="hero-actions reveal">
+        <a class="btn btn-primary" href="#install">Download 1Tracker</a>
+        <a class="btn btn-ghost" href="#features">See what’s inside</a>
+      </div>
+      <div class="hero-icon reveal">
+        <img src="./app-icon.jpg" width="280" height="280" alt="1Tracker app icon — a rising trend line on crimson">
+      </div>
+    </section>
+
+    <section class="strip" aria-hidden="true">
+      <p>Weight now · Diet next · Training next · Learning next</p>
+    </section>
+
+    <section class="features" id="features">
+      <header class="section-head reveal">
+        <p class="eyebrow">Today</p>
+        <h2>Weight, done right.</h2>
+        <p class="section-sub">Built for the gym, the morning scale, and the days you almost skip.</p>
+      </header>
+
+      <article class="feature feature-dark reveal">
+        <div class="feature-copy">
+          <h3>Dial. Don’t type.</h3>
+          <p>First weigh-in uses a large keypad. After that, an analog scale seeded from last time — flick the rim, feel the snap, save.</p>
+        </div>
+        <div class="device" aria-hidden="true">
+          <div class="device-screen screen-scale">
+            <p class="ui-kicker">Today</p>
+            <p class="ui-hero-num">74.2<span> kg</span></p>
+            <p class="ui-delta">−0.3 from last</p>
+            <svg class="ui-arc" viewBox="0 0 260 90" fill="none">
+              <path d="M20 78 A120 120 0 0 1 240 78" stroke="url(#arcFade)" stroke-width="10" stroke-linecap="round"/>
+              <circle cx="168" cy="22" r="7" fill="#fff"/>
+              <defs>
+                <linearGradient id="arcFade" x1="20" y1="78" x2="240" y2="20">
+                  <stop stop-color="#9F1239"/>
+                  <stop offset="1" stop-color="#FB7185"/>
+                </linearGradient>
+              </defs>
+            </svg>
+            <div class="ui-cta">Save</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="feature reveal">
+        <div class="feature-copy">
+          <h3>See the trend, not the noise.</h3>
+          <p>A smooth chart sits above your history. Weekly pace unlocks after a week. Monthly averages after a month. No fake insights on day one.</p>
+        </div>
+        <div class="device" aria-hidden="true">
+          <div class="device-screen screen-chart">
+            <p class="ui-kicker">Weekly change</p>
+            <p class="ui-hero-num ui-hero-num-sm grad-text">0.3 kg lost</p>
+            <p class="ui-delta">per week · two months in</p>
+            <svg class="ui-chart" viewBox="0 0 240 88" fill="none">
+              <path d="M8 70 C40 70 52 48 88 44 C124 40 140 28 176 22 C200 18 220 14 232 10" stroke="url(#lineFade)" stroke-width="3.5" stroke-linecap="round"/>
+              <circle cx="232" cy="10" r="5" fill="#E11D48"/>
+              <defs>
+                <linearGradient id="lineFade" x1="8" y1="70" x2="232" y2="10">
+                  <stop stop-color="#9F1239"/>
+                  <stop offset="1" stop-color="#FB7185"/>
+                </linearGradient>
+              </defs>
+            </svg>
+            <ul class="ui-list">
+              <li><span>Mon · Today</span><b>74.2</b></li>
+              <li><span>Sun · Yesterday</span><b>74.5</b></li>
+              <li><span>Fri · 3 days ago</span><b>74.8</b></li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <div class="grid-two">
+        <article class="card reveal">
+          <h3>Gym. Gloves. Go.</h3>
+          <p>Huge save buttons. Thumb-first layout. Haptics when it counts. One job per screen — log, then leave.</p>
+        </article>
+        <article class="card reveal">
+          <h3>Your Drive. Your history.</h3>
+          <p>Optional Google Drive backup. Reinstall, restore, keep going. Weight stays on your phone unless you connect.</p>
+        </article>
+        <article class="card reveal">
+          <h3>Offline first.</h3>
+          <p>Every weigh-in is on-device. No account required to start. Updates download in-app when you’re ready.</p>
+        </article>
+        <article class="card reveal">
+          <h3>Honest timestamps.</h3>
+          <p>Every entry shows weekday and relative time. Mon · Today · 9:30 AM — never a bare date.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="next" id="next">
+      <div class="next-glow" aria-hidden="true"></div>
+      <header class="section-head reveal">
+        <p class="eyebrow light">Up next</p>
+        <h2><span class="grad-text">Weight is chapter one.</span></h2>
+        <p class="section-sub light">The name is the product: one tracker for fitness, fuel, and focus.</p>
+      </header>
+      <ol class="next-list">
+        <li class="reveal">
+          <span class="next-now">Now</span>
+          <h3>Weight</h3>
+          <p>Log, chart, weekly pace, Drive restore.</p>
+        </li>
+        <li class="reveal">
+          <span class="next-soon">Next</span>
+          <h3>Diet</h3>
+          <p>Meals without a spreadsheet. Glanceable, gym-speed logging.</p>
+        </li>
+        <li class="reveal">
+          <span class="next-soon">Next</span>
+          <h3>Training</h3>
+          <p>Sets you can log in half-gloves. Last weight, last reps, next set.</p>
+        </li>
+        <li class="reveal">
+          <span class="next-soon">Next</span>
+          <h3>Learning</h3>
+          <p>The rest of you, in the same home. One place. No extra apps.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="install" id="install">
+      <div class="install-panel reveal">
+        <img class="install-icon" src="./app-icon.jpg" width="96" height="96" alt="1Tracker icon">
+        <h2>Get 1Tracker.</h2>
+        <p>Sideload the latest signed build. Android 14 or later. Then allow installs from your browser.</p>
+        <a class="btn btn-primary btn-xl" href="https://raw.githubusercontent.com/mumayank/tracker-releases/main/1tracker.apk">
+          Download the app
+        </a>
+        <ol class="install-steps">
+          <li>Download the APK on your phone.</li>
+          <li>Allow installs from this browser if Android asks.</li>
+          <li>Open 1Tracker. Restore from Drive if you’ve been here before.</li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <img src="./app-icon.jpg" width="28" height="28" alt="">
+    <p>1Tracker · Android · Weight first.</p>
+    <p class="footer-fine">On-device by default. Drive backup is optional. Not on Play Store yet.</p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
