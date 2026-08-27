@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>1Tracker</title>
   <meta name="description" content="1Tracker — one place for everything you track. Weight first. Diet, training, and learning next. Designed for the gym.">
-  <meta name="theme-color" content="#E11D48">
+  <meta name="theme-color" content="#000000">
   <meta property="og:title" content="1Tracker">
   <meta property="og:description" content="One place for everything you track. Starting with weight.">
   <meta property="og:image" content="./app-icon.jpg">
@@ -97,10 +97,10 @@
             <p class="ui-hero-num ui-hero-num-sm grad-text">0.3 kg lost</p>
             <p class="ui-delta">per week · two months in</p>
             <svg class="ui-chart" viewBox="0 0 240 88" fill="none">
-              <path d="M8 70 C40 70 52 48 88 44 C124 40 140 28 176 22 C200 18 220 14 232 10" stroke="url(#lineFade)" stroke-width="3.5" stroke-linecap="round"/>
-              <circle cx="232" cy="10" r="5" fill="#E11D48"/>
+              <path d="M8 10 C40 10 52 32 88 36 C124 40 140 52 176 58 C200 62 220 66 232 70" stroke="url(#lineFade)" stroke-width="3.5" stroke-linecap="round"/>
+              <circle cx="232" cy="70" r="5" fill="#E11D48"/>
               <defs>
-                <linearGradient id="lineFade" x1="8" y1="70" x2="232" y2="10">
+                <linearGradient id="lineFade" x1="8" y1="10" x2="232" y2="70">
                   <stop stop-color="#9F1239"/>
                   <stop offset="1" stop-color="#FB7185"/>
                 </linearGradient>
@@ -121,8 +121,8 @@
           <p>Huge save buttons. Thumb-first layout. Haptics when it counts. One job per screen — log, then leave.</p>
         </article>
         <article class="card reveal">
-          <h3>Your Drive. Your history.</h3>
-          <p>Optional Google Drive backup. Reinstall, restore, keep going. Weight stays on your phone unless you connect.</p>
+          <h3>Readable JSON. You keep it.</h3>
+          <p>Your weigh-ins export as plain JSON you can open in any editor. Share it to Files, Drive, or wherever you want — 1Tracker never auto-uploads it.</p>
         </article>
         <article class="card reveal">
           <h3>Offline first.</h3>
@@ -146,7 +146,7 @@
         <li class="reveal">
           <span class="next-now">Now</span>
           <h3>Weight</h3>
-          <p>Log, chart, weekly pace, Drive restore.</p>
+          <p>Log, chart, weekly pace, human-readable JSON backup.</p>
         </li>
         <li class="reveal">
           <span class="next-soon">Next</span>
@@ -177,7 +177,7 @@
         <ol class="install-steps">
           <li>Download the APK on your phone.</li>
           <li>Allow installs from this browser if Android asks.</li>
-          <li>Open 1Tracker. Restore from Drive if you’ve been here before.</li>
+          <li>Open 1Tracker. Log a weigh-in. Share the JSON file when you want a copy off-device.</li>
         </ol>
       </div>
     </section>
@@ -186,14 +186,10 @@
   <footer class="footer">
     <img src="./app-icon.jpg" width="28" height="28" alt="">
     <p>1Tracker · Android · Weight first.</p>
-    <p class="footer-fine">On-device by default. Drive backup is optional. Not on Play Store yet.</p>
-    <p class="footer-fine">
-      <a href="./privacy.html">Privacy</a>
-      ·
-      <a href="./terms.html">Terms</a>
-      ·
-      <a href="mailto:mumayank@gmail.com">Contact</a>
-    </p>
+    <section class="policy" id="policy">
+      <h2>Privacy &amp; terms</h2>
+      <p>Weigh-ins stay on your phone. 1Tracker does not create an account, show ads, or send your numbers to us. A readable JSON backup leaves the device only if you share it. Update checks download a version file (and an APK if you tap install) from GitHub. The app is free, not medical advice, and provided as-is — you install and use it at your own risk. Using 1Tracker means you agree to this. Contact <a href="mailto:mumayank@gmail.com">mumayank@gmail.com</a>. India · 27 Aug 2026.</p>
+    </section>
   </footer>
 
   <script src="./script.js"></script>

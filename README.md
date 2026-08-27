@@ -1,7 +1,5 @@
 # 1Tracker
 
-Public product site for **1Tracker**.
+Public product site: https://mumayank.github.io/1tracker/
 
-Live: https://mumayank.github.io/1tracker/
-
-Download: https://raw.githubusercontent.com/mumayank/tracker-releases/main/1tracker.apk
+The signed APK is mirrored from [`mumayank/tracker-releases`](https://github.com/mumayank/tracker-releases).
