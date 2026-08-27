@@ -1,7 +1,7 @@
-# 1Tracker
+# 1Tracker public site (local draft)
 
-Public product site for **1Tracker**.
+Live site, APK, privacy policy, and terms are published from public [`mumayank/tracker-releases`](https://github.com/mumayank/tracker-releases) (`docs/` → GitHub Pages):
 
-Live: https://mumayank.github.io/1tracker/
+https://mumayank.github.io/tracker-releases/
 
-Download: https://raw.githubusercontent.com/mumayank/tracker-releases/main/1tracker.apk
+This folder is a local working copy. After you change it, copy the files into `tracker-releases/docs/` and push that repo.
