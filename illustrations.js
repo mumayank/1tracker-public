@@ -133,6 +133,25 @@
     );
   }
 
+  // ── Pencil (edit) ──
+  function pencil() {
+    return svg(
+      rr(38, 8, 12, 52, 4, C.animal) +
+        rr(36, 56, 16, 18, 2, C.scale) +
+        rr(40, 70, 8, 10, 2, C.accent) +
+        rr(34, 8, 20, 12, 3, C.plant)
+    );
+  }
+
+  // ── Restore (refresh) ──
+  function restore() {
+    return svg(
+      `<path d="M50 18 A28 28 0 1 1 22 50" stroke="${C.accent}" stroke-width="8" stroke-linecap="round" fill="none"/>` +
+        rr(18, 38, 12, 16, 3, C.accent) +
+        rr(42, 12, 16, 12, 3, C.scale)
+    );
+  }
+
   // ── Render ──
   const map = {
     "person-on-scale": personOnScale,
@@ -144,6 +163,8 @@
     bell: bell,
     download: download,
     apple: apple,
+    pencil: pencil,
+    restore: restore,
   };
 
   document.querySelectorAll(".peek[data-illu]").forEach((el) => {
