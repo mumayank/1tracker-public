@@ -55,7 +55,7 @@
     })
     .catch(() => {
       if (label) {
-        label.textContent = "Latest signed APK";
+        label.textContent = "Latest version";
       }
     });
 })();
