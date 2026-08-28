@@ -235,27 +235,6 @@ a {
   margin-top: 32px;
 }
 
-.hero-badges {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 8px;
-  margin: 22px 0 0;
-  padding: 0;
-  list-style: none;
-}
-
-.hero-badges li {
-  padding: 8px 14px;
-  border-radius: 980px;
-  border: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.06);
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: -0.01em;
-  color: var(--text);
-}
-
 .hero-icon {
   margin: 56px auto 0;
   width: min(280px, 70vw);
@@ -609,21 +588,6 @@ a {
   font-size: 19px;
 }
 
-.install-panel .install-version {
-  margin: 12px auto 8px;
-  font-size: 14px;
-  word-break: break-all;
-}
-
-.install-panel .install-past {
-  margin: 0 auto 8px;
-  font-size: 14px;
-}
-
-.install-past a {
-  color: var(--muted);
-}
-
 .install-steps {
   max-width: 28em;
   margin: 28px auto 0;
@@ -691,59 +655,11 @@ a {
 }
 
 .policy h2 {
-  margin: 0 0 14px;
+  margin: 0 0 8px;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--muted);
-}
-
-.promise-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.promise-list li {
-  display: flex;
-  align-items: flex-start;
-  gap: 14px;
-  min-height: 56px;
-  padding: 10px 0;
-}
-
-.promise-icon {
-  flex: 0 0 44px;
-  width: 44px;
-  height: 44px;
-  border-radius: 14px;
-  display: grid;
-  place-items: center;
-  color: var(--red-light);
-  background: rgba(225, 29, 72, 0.14);
-}
-
-.promise-icon svg {
-  width: 22px;
-  height: 22px;
-}
-
-.promise-list strong {
-  display: block;
-  color: var(--text);
-  font-size: 15px;
-  font-weight: 650;
-  letter-spacing: -0.02em;
-}
-
-.promise-list p {
-  margin: 2px 0 0;
-  font-size: 13px;
-  line-height: 1.35;
   color: var(--muted);
 }
 
@@ -804,17 +720,128 @@ a {
   .hero {
     padding-top: 48px;
   }
+
+  .peek-hero {
+    width: 90px;
+    bottom: -6px;
+    right: -8px;
+  }
+
+  .peek-device {
+    width: 64px;
+    bottom: 8px;
+    right: 6px;
+  }
+
+  .peek-card {
+    width: 48px;
+    bottom: 12px;
+    right: 12px;
+  }
+
+  .peek-roadmap {
+    width: 40px;
+  }
+
+  .peek-install {
+    width: 44px;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .hero-icon img,
   .reveal,
-  .reveal.is-visible {
+  .reveal.is-visible,
+  .peek {
     animation: none;
     opacity: 1;
     transform: none;
   }
   .btn:hover { transform: none; }
+}
+
+/* ── Illustrations ────────────────────────────── */
+
+.peek {
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.peek.is-visible {
+  animation: peek-enter 600ms var(--ease) forwards;
+}
+
+@keyframes peek-enter {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.peek svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.peek-hero {
+  width: 120px;
+  bottom: -8px;
+  right: -12px;
+  opacity: 0;
+}
+
+.peek-device {
+  width: 80px;
+  bottom: 12px;
+  right: 8px;
+}
+
+.peek-card {
+  width: 64px;
+  bottom: 16px;
+  right: 16px;
+  opacity: 0.55;
+}
+
+.peek-roadmap {
+  width: 52px;
+  position: relative;
+  margin-bottom: 6px;
+  opacity: 0.45;
+}
+
+.peek-install {
+  width: 56px;
+  flex-shrink: 0;
+  align-self: center;
+}
+
+.hero-icon {
+  position: relative;
+}
+
+.install-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin: 0 auto;
+  max-width: 320px;
+}
+
+/* ── Motivation ───────────────────────────────── */
+
+.motivation {
+  margin: 18px auto 0;
+  max-width: 28em;
+  font-style: italic;
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.42);
+  letter-spacing: -0.01em;
 }
 
