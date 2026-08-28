@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mumayank.github.io/1tracker/sitemap.xml
