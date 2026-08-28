@@ -32,9 +32,9 @@
   if (!button) return;
 
   const versionJson =
-    "https://raw.githubusercontent.com/mumayank/tracker-releases/main/version.json";
+    "https://raw.githubusercontent.com/mumayank/1tracker-public/main/version.json";
   const filesBase =
-    "https://raw.githubusercontent.com/mumayank/tracker-releases/main/";
+    "https://raw.githubusercontent.com/mumayank/1tracker-public/main/";
 
   fetch(`${versionJson}?t=${Date.now()}`)
     .then((response) => {
