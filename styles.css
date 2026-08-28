@@ -442,9 +442,12 @@ a {
 
 .card {
   padding: 36px 32px;
+  padding-right: 100px;
   border-radius: 28px;
   background-color: #000;
   border: 1px solid var(--line);
+  position: relative;
+  overflow: hidden;
 }
 
 .card:nth-child(1) {
@@ -708,6 +711,11 @@ a {
     text-align: center;
   }
 
+  .card {
+    padding: 28px 22px;
+    padding-right: 80px;
+  }
+
   .feature-copy p {
     margin-inline: auto;
   }
@@ -721,22 +729,16 @@ a {
     padding-top: 48px;
   }
 
-  .peek-hero {
-    width: 90px;
-    bottom: -6px;
-    right: -8px;
-  }
-
   .peek-device {
-    width: 64px;
-    bottom: 8px;
-    right: 6px;
+    width: 70px;
+    bottom: 6px;
+    right: 2px;
   }
 
   .peek-card {
-    width: 48px;
-    bottom: 12px;
-    right: 12px;
+    width: 80px;
+    bottom: -8px;
+    right: -6px;
   }
 
   .peek-roadmap {
@@ -788,31 +790,25 @@ a {
   height: auto;
 }
 
-.peek-hero {
-  width: 120px;
-  bottom: -8px;
-  right: -12px;
-  opacity: 0;
-}
-
 .peek-device {
-  width: 80px;
-  bottom: 12px;
-  right: 8px;
+  width: 90px;
+  bottom: 8px;
+  right: 4px;
+  opacity: 0.6;
 }
 
 .peek-card {
-  width: 64px;
-  bottom: 16px;
-  right: 16px;
-  opacity: 0.55;
+  width: 110px;
+  bottom: -12px;
+  right: -8px;
+  opacity: 0.72;
 }
 
 .peek-roadmap {
   width: 52px;
   position: relative;
   margin-bottom: 6px;
-  opacity: 0.45;
+  opacity: 0.6;
 }
 
 .peek-install {
