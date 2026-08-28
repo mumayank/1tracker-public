@@ -1,6 +1,7 @@
 {
-  "versionCode": 39,
-  "versionName": "1.0.39",
-  "apkUrl": "https://raw.githubusercontent.com/mumayank/1tracker-public/main/1tracker.apk?v=39",
-  "apkFileName": "1tracker.apk"
+  "versionCode": 40,
+  "versionName": "1.0.40",
+  "apkUrl": "https://raw.githubusercontent.com/mumayank/1tracker-public/main/1tracker.apk?v=40",
+  "apkFileName": "1tracker.1.0.40.28.aug.2026.02.50.43.pm.apk",
+  "sourceSha": "bc533b5c9631408f3634b3500ef2ecc7043694d3"
 }
