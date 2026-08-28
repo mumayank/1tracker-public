@@ -235,6 +235,27 @@ a {
   margin-top: 32px;
 }
 
+.hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin: 22px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.hero-badges li {
+  padding: 8px 14px;
+  border-radius: 980px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.06);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--text);
+}
+
 .hero-icon {
   margin: 56px auto 0;
   width: min(280px, 70vw);
@@ -670,11 +691,59 @@ a {
 }
 
 .policy h2 {
-  margin: 0 0 8px;
+  margin: 0 0 14px;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  color: var(--muted);
+}
+
+.promise-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.promise-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  min-height: 56px;
+  padding: 10px 0;
+}
+
+.promise-icon {
+  flex: 0 0 44px;
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  color: var(--red-light);
+  background: rgba(225, 29, 72, 0.14);
+}
+
+.promise-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.promise-list strong {
+  display: block;
+  color: var(--text);
+  font-size: 15px;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+}
+
+.promise-list p {
+  margin: 2px 0 0;
+  font-size: 13px;
+  line-height: 1.35;
   color: var(--muted);
 }
 
