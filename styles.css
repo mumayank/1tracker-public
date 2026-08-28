@@ -736,9 +736,9 @@ a {
   }
 
   .peek-card {
-    width: 80px;
-    bottom: -8px;
-    right: -6px;
+    width: 70px;
+    bottom: 6px;
+    right: 6px;
   }
 
   .peek-roadmap {
@@ -746,7 +746,7 @@ a {
   }
 
   .peek-install {
-    width: 44px;
+    width: 32px;
   }
 }
 
@@ -798,9 +798,9 @@ a {
 }
 
 .peek-card {
-  width: 110px;
-  bottom: -12px;
-  right: -8px;
+  width: 90px;
+  bottom: 8px;
+  right: 8px;
   opacity: 0.72;
 }
 
@@ -812,9 +812,10 @@ a {
 }
 
 .peek-install {
-  width: 56px;
+  width: 40px;
   flex-shrink: 0;
   align-self: center;
+  opacity: 0.5;
 }
 
 .hero-icon {
@@ -834,9 +835,8 @@ a {
 
 .motivation {
   margin: 18px auto 0;
-  max-width: 28em;
   font-style: italic;
-  font-size: 17px;
+  font-size: 14px;
   color: rgba(255, 255, 255, 0.42);
   letter-spacing: -0.01em;
 }
