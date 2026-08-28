@@ -25,3 +25,37 @@
 
   nodes.forEach((el) => io.observe(el));
 })();
+
+(() => {
+  const button = document.querySelector("[data-download-apk]");
+  const label = document.querySelector("[data-download-label]");
+  if (!button) return;
+
+  const versionJson =
+    "https://raw.githubusercontent.com/mumayank/tracker-releases/main/version.json";
+  const filesBase =
+    "https://raw.githubusercontent.com/mumayank/tracker-releases/main/";
+
+  fetch(`${versionJson}?t=${Date.now()}`)
+    .then((response) => {
+      if (!response.ok) throw new Error("version.json missing");
+      return response.json();
+    })
+    .then((data) => {
+      const fileName = data.apkFileName || "1tracker.apk";
+      const versionName = data.versionName || "";
+      button.href = `${filesBase}${fileName}`;
+      button.setAttribute("download", fileName);
+      if (versionName) {
+        button.textContent = `Download ${versionName}`;
+      }
+      if (label) {
+        label.textContent = fileName;
+      }
+    })
+    .catch(() => {
+      if (label) {
+        label.textContent = "Latest signed APK";
+      }
+    });
+})();

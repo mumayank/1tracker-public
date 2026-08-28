@@ -588,6 +588,21 @@ a {
   font-size: 19px;
 }
 
+.install-panel .install-version {
+  margin: 12px auto 8px;
+  font-size: 14px;
+  word-break: break-all;
+}
+
+.install-panel .install-past {
+  margin: 0 auto 8px;
+  font-size: 14px;
+}
+
+.install-past a {
+  color: var(--muted);
+}
+
 .install-steps {
   max-width: 28em;
   margin: 28px auto 0;
