@@ -409,6 +409,25 @@ a {
   margin: 18px 0 8px;
 }
 
+.screen-sugar {
+  background: #000;
+  color: #fff;
+  text-align: center;
+}
+
+.screen-sugar .ui-kicker {
+  color: var(--red-light);
+}
+
+.ui-spectrum {
+  width: 100%;
+  margin-top: 26px;
+}
+
+.ui-band-normal {
+  color: #34d399;
+}
+
 .ui-cta {
   margin-top: 28px;
   height: 52px;
@@ -441,6 +460,7 @@ a {
 }
 
 .card {
+  position: relative;
   padding: 36px 32px;
   border-radius: 28px;
   background-color: #000;

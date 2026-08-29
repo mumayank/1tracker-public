@@ -152,6 +152,15 @@
     );
   }
 
+  // ── Water Droplet (blood sugar) ──
+  function droplet() {
+    return svg(
+      `<path d="M50 10 C34 32 24 42 24 56 a26 26 0 0 0 52 0 C76 42 66 32 50 10 Z" fill="${C.mug}"/>` +
+        ci(38, 58, 6, "#ffffff", 0.35) +
+        ci(62, 66, 4, C.accent, 0.55)
+    );
+  }
+
   // ── Render ──
   const map = {
     "person-on-scale": personOnScale,
@@ -165,6 +174,7 @@
     apple: apple,
     pencil: pencil,
     restore: restore,
+    droplet: droplet,
   };
 
   document.querySelectorAll(".peek[data-illu]").forEach((el) => {
