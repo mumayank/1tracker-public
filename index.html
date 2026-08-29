@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>1Tracker</title>
-  <meta name="description" content="1Tracker — a gym-friendly weight tracker for Android. 100% free. Your numbers stay on this phone. We never see them.">
+  <meta name="description" content="1Tracker — a gym-friendly weight and blood sugar tracker for Android. 100% free. Your numbers stay on this phone. We never see them.">
   <meta name="theme-color" content="#000000">
   <meta name="color-scheme" content="dark only">
   <meta property="og:title" content="1Tracker">
-  <meta property="og:description" content="A gym-friendly weight tracker. 100% free. Your numbers stay on this phone.">
+  <meta property="og:description" content="A gym-friendly weight and blood sugar tracker. 100% free. Your numbers stay on this phone.">
   <meta property="og:image" content="./app-icon.jpg">
   <meta property="og:type" content="website">
   <link rel="icon" type="image/png" href="./favicon.png">
@@ -20,242 +20,108 @@
 
   <header class="nav">
     <a class="nav-brand" href="#top" aria-label="1Tracker home">
-      <img src="./app-icon.jpg" alt="" width="32" height="32">
+      <img src="./app-icon.jpg" alt="" width="28" height="28">
       <span>1Tracker</span>
     </a>
-    <nav class="nav-links" aria-label="Page">
-      <a href="#features">Features</a>
-      <a href="#next">Up next</a>
-    </nav>
-    <a class="btn btn-nav" href="#install">Get the app</a>
+    <a class="btn btn-nav" href="https://raw.githubusercontent.com/mumayank/1tracker-public/main/1tracker.apk">Get the app</a>
   </header>
 
   <main id="main">
     <section class="hero" id="top">
       <div class="hero-glow" aria-hidden="true"></div>
-      <p class="eyebrow reveal">Available on Android</p>
-      <h1 class="reveal">
-        One place.<br>
-        <span class="grad-text">Everything you track.</span>
-      </h1>
-      <p class="lede reveal">
-        A gym-friendly weight tracker. 100% free. Your numbers stay on this phone. We never see them.
-      </p>
-      <div class="hero-actions reveal">
-        <a class="btn btn-primary" href="#install">Download 1Tracker</a>
-        <a class="btn btn-ghost" href="#features">See what’s inside</a>
-      </div>
-      <div class="hero-icon reveal">
-        <img src="./app-icon.jpg" width="280" height="280" alt="1Tracker app icon — a rising trend line on crimson">
-      </div>
-    </section>
 
-    <section class="strip" aria-hidden="true">
-      <p>Weight tracking · Blood sugar · Offline first · 100% free · Your data stays yours</p>
-    </section>
-
-    <section class="features" id="features">
-      <header class="section-head reveal">
-        <p class="eyebrow">Today</p>
-        <h2>Weight, done right.</h2>
-        <p class="section-sub">Built for the gym, the morning scale, and the days you almost skip.</p>
-      </header>
-
-      <article class="feature feature-dark reveal">
-        <div class="feature-copy">
-          <h3>Dial. Don’t type.</h3>
-          <p>First weigh-in uses a large keypad. After that, an analog scale seeded from last time — flick the rim, feel the snap, save.</p>
+      <div class="hero-copy">
+        <p class="eyebrow">100% free · Android 14+ · No account</p>
+        <h1>One place.<br>
+          <span class="grad-text">Everything you track.</span>
+        </h1>
+        <p class="lede">A gym-friendly weight and blood sugar tracker. Your numbers stay on this phone. We never see them.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" id="install" href="https://raw.githubusercontent.com/mumayank/1tracker-public/main/1tracker.apk">Download 1Tracker</a>
+          <p class="install-note">APK from GitHub. Allow installs from your browser if Android asks.</p>
         </div>
-          <div class="device" aria-hidden="true">
-          <div class="device-screen screen-scale">
-            <p class="ui-kicker">Today</p>
-            <p class="ui-hero-num">74.2<span> kg</span></p>
-            <p class="ui-delta">−0.3 from last</p>
-            <svg class="ui-arc" viewBox="0 0 260 90" fill="none">
-              <path d="M20 78 A120 120 0 0 1 240 78" stroke="url(#arcFade)" stroke-width="10" stroke-linecap="round"/>
-              <circle cx="168" cy="22" r="7" fill="#fff"/>
-              <defs>
-                <linearGradient id="arcFade" x1="20" y1="78" x2="240" y2="20">
-                  <stop stop-color="#9F1239"/>
-                  <stop offset="1" stop-color="#FB7185"/>
-                </linearGradient>
-              </defs>
-            </svg>
-            <div class="ui-cta">Save</div>
+
+        <ul class="feature-list" aria-label="Features — click to preview each one">
+          <li><button class="feature-item is-active" data-slide="0"><span class="f-title">Everything on one screen</span><span class="f-sub">Today's weight, BMI, your goal, weekly pace, trend, recent weigh-ins.</span></button></li>
+          <li><button class="feature-item" data-slide="1"><span class="f-title">Dial. Don't type.</span><span class="f-sub">Flick the rim: 0.1 kg ticks, haptic snaps, seeded from your last weigh-in.</span></button></li>
+          <li><button class="feature-item" data-slide="2"><span class="f-title">First weigh-in? Type it.</span><span class="f-sub">Big keys, one decimal, a save button you can't miss.</span></button></li>
+          <li><button class="feature-item" data-slide="3"><span class="f-title">Trend, not noise.</span><span class="f-sub">A dashed line filters daily water weight. The weekly average unlocks after a real week.</span></button></li>
+          <li><button class="feature-item" data-slide="4"><span class="f-title">A goal with a date.</span><span class="f-sub">Projected from your real pace — and it admits it when there's no trend.</span></button></li>
+          <li><button class="feature-item" data-slide="5"><span class="f-title">Blood sugar, live today.</span><span class="f-sub">Fasting bands, weekly averages, time in range. mg/dL or mmol/L.</span></button></li>
+          <li><button class="feature-item" data-slide="6"><span class="f-title">Fix anything.</span><span class="f-sub">Wrong digit or wrong day — change the weight, the date, the time.</span></button></li>
+          <li><button class="feature-item" data-slide="7"><span class="f-title">Your JSON. Your call.</span><span class="f-sub">A readable backup leaves only when you share it. Restoring asks twice.</span></button></li>
+          <li><button class="feature-item" data-slide="8"><span class="f-title">The 8 AM nudge.</span><span class="f-sub">Optional. Decline and 1Tracker leaves a quiet card here instead of nagging.</span></button></li>
+        </ul>
+      </div>
+
+      <div class="hero-phone" aria-roledescription="carousel" aria-label="1Tracker screenshots">
+        <div class="phone">
+          <div class="phone-screen">
+            <div class="carousel" id="carousel">
+              <div class="slides" id="slides">
+                <figure class="slide is-active" data-title="Everything on one screen" data-sub="Today's weight, BMI, your goal, weekly pace, trend, recent weigh-ins.">
+                  <img src="./shots/home.webp" alt="1Tracker home: latest weight 74.9 kg, BMI 23.6 Normal, goal 4.9 kg to go, 0.4 kg lost per week, big Log today's weight button" width="540" height="1200">
+                </figure>
+                <figure class="slide" data-title="Dial. Don't type." data-sub="Flick the rim: 0.1 kg ticks, haptic snaps, seeded from your last weigh-in.">
+                  <img src="./shots/dial.webp" alt="Weight entry with an analog dial at 74.6 kg showing Decreased 0.3 kg in green" width="540" height="1200" loading="lazy">
+                </figure>
+                <figure class="slide" data-title="First weigh-in? Type it." data-sub="Big keys, one decimal, a save button you can't miss.">
+                  <img src="./shots/keypad.webp" alt="Keypad entry showing 74.9 kg with Same as last weigh-in and an enabled Save" width="540" height="1200" loading="lazy">
+                </figure>
+                <figure class="slide" data-title="Trend, not noise." data-sub="A dashed line filters daily water weight. The weekly average unlocks after a real week.">
+                  <img src="./shots/trend.webp" alt="Trend chart with a dashed smoothed line and the caption Dashed line: smoothed trend that filters daily water-weight noise, recent list below" width="540" height="1200" loading="lazy">
+                </figure>
+                <figure class="slide" data-title="A goal with a date." data-sub="Projected from your real pace — and it admits it when there's no trend.">
+                  <img src="./shots/goal.webp" alt="Home after logging: today's weight 74.6 kg, BMI 23.5 Normal, goal 4.6 kg to go projected 3 Nov, compact Add another weigh-in pill" width="540" height="1200" loading="lazy">
+                </figure>
+                <figure class="slide" data-title="Blood sugar, live today." data-sub="Fasting bands, weekly averages, time in range. mg/dL or mmol/L.">
+                  <img src="./shots/sugar.webp" alt="Blood sugar tab: latest reading 96 mg/dL, Normal range, spectrum bar 70 to 126, sugar averages card" width="540" height="1200" loading="lazy">
+                </figure>
+                <figure class="slide" data-title="Fix anything." data-sub="Wrong digit or wrong day — change the weight, the date, the time.">
+                  <img src="./shots/edit.webp" alt="Edit this weigh-in screen with a When date button and the scale dial" width="540" height="1200" loading="lazy">
+                </figure>
+                <figure class="slide" data-title="Your JSON. Your call." data-sub="A readable backup leaves only when you share it. Restoring asks twice.">
+                  <img src="./shots/restore.webp" alt="Restore confirmation: Replace everything? with a red Yes, restore button" width="540" height="1200" loading="lazy">
+                </figure>
+                <figure class="slide" data-title="The 8 AM nudge." data-sub="Optional. Decline and 1Tracker leaves a quiet card here instead of nagging.">
+                  <img src="./shots/reminder.webp" alt="Home with the red Morning weigh-in is off card and a Turn on notifications button" width="540" height="1200" loading="lazy">
+                </figure>
+              </div>
+            </div>
+            <span class="punch" aria-hidden="true"></span>
           </div>
         </div>
-      </article>
 
-      <article class="feature reveal">
-        <div class="feature-copy">
-          <h3>See the trend, not the noise.</h3>
-          <p>A smooth chart sits above your history. Weekly pace unlocks after a week. Monthly averages after a month. No fake insights on day one.</p>
+        <div class="slide-caption" aria-live="polite">
+          <p class="cap-title" id="capTitle">Everything on one screen</p>
+          <p class="cap-sub" id="capSub">Today's weight, BMI, your goal, weekly pace, trend, recent weigh-ins.</p>
         </div>
-          <div class="device" aria-hidden="true">
-          <div class="device-screen screen-chart">
-            <p class="ui-kicker">Weekly change</p>
-            <p class="ui-hero-num ui-hero-num-sm grad-text">0.3 kg lost</p>
-            <p class="ui-delta">per week · two months in</p>
-            <svg class="ui-chart" viewBox="0 0 240 88" fill="none">
-              <path d="M8 10 C40 10 52 32 88 36 C124 40 140 52 176 58 C200 62 220 66 232 70" stroke="url(#lineFade)" stroke-width="3.5" stroke-linecap="round"/>
-              <circle cx="232" cy="70" r="5" fill="#E11D48"/>
-              <defs>
-                <linearGradient id="lineFade" x1="8" y1="10" x2="232" y2="70">
-                  <stop stop-color="#9F1239"/>
-                  <stop offset="1" stop-color="#FB7185"/>
-                </linearGradient>
-              </defs>
-            </svg>
-            <ul class="ui-list">
-              <li><span>Mon · Today</span><b>74.2</b></li>
-              <li><span>Sun · Yesterday</span><b>74.5</b></li>
-              <li><span>Fri · 3 days ago</span><b>74.8</b></li>
-            </ul>
-          </div>
-        </div>
-      </article>
 
-      <article class="feature reveal">
-        <div class="feature-copy">
-          <h3>Blood sugar, without the guesswork.</h3>
-          <p>Log a reading and say when you took it — fasting, before a meal, or two hours after. 1Tracker places you on a colored spectrum: normal, prediabetes, or diabetes range, using the same bands doctors use. The bands shift with the timing, because that is how the numbers actually work.</p>
+        <div class="carousel-ui">
+          <button class="c-arrow" id="prevBtn" aria-label="Previous feature">&#8249;</button>
+          <div class="dots" id="dots" role="tablist" aria-label="Choose feature"></div>
+          <button class="c-arrow" id="nextBtn" aria-label="Next feature">&#8250;</button>
         </div>
-          <div class="device" aria-hidden="true">
-          <div class="device-screen screen-sugar">
-            <p class="ui-kicker">Fasting · Today · 7:05 AM</p>
-            <p class="ui-hero-num">96<span> mg/dL</span></p>
-            <p class="ui-delta ui-band-normal">Normal range</p>
-            <svg class="ui-spectrum" viewBox="0 0 240 36" fill="none" role="img" aria-label="Spectrum from low through normal and prediabetes to diabetes, dot inside the normal segment">
-              <rect x="0" y="6" width="60" height="14" rx="3" fill="#E11D48" opacity="0.5"/>
-              <rect x="60" y="6" width="60" height="14" fill="#2E8B46"/>
-              <rect x="120" y="6" width="60" height="14" fill="#C98A2B"/>
-              <rect x="180" y="6" width="60" height="14" rx="3" fill="#B3261E"/>
-              <circle cx="90" cy="13" r="7" fill="#fff" stroke="#2E8B46" stroke-width="3"/>
-              <text x="60" y="34" fill="#9aa7b2" font-size="10" font-weight="bold" text-anchor="middle">70</text>
-              <text x="120" y="34" fill="#9aa7b2" font-size="10" font-weight="bold" text-anchor="middle">100</text>
-              <text x="180" y="34" fill="#9aa7b2" font-size="10" font-weight="bold" text-anchor="middle">126</text>
-            </svg>
-          </div>
-        </div>
-      </article>
-
-      <div class="grid-two">
-        <article class="card reveal">
-          <h3>Gym. Gloves. Go.</h3>
-          <p>Huge save buttons while today's weigh-in is pending — then the log button quietly shrinks to a pill and the chart gets the room. Thumb-first, haptics when it counts, one job per screen.</p>
-        </article>
-        <article class="card reveal">
-          <h3>A goal with a date.</h3>
-          <p>Set a goal weight and 1Tracker projects when your trend gets you there — honestly. Flat trend or moving the wrong way? It says so instead of inventing a date.</p>
-        </article>
-        <article class="card reveal">
-          <h3>Know your healthy range.</h3>
-          <p>Add your height once and see your BMI with the healthy weight range for your body. A range, never a verdict — one tap hides it for good.</p>
-        </article>
-        <article class="card reveal">
-          <h3>Water weight, filtered.</h3>
-          <p>A dashed smoothed-trend line rides over the chart, so a salty dinner doesn't read as a setback. The raw dots stay honest.</p>
-        </article>
-        <article class="card reveal">
-          <h3>Editable entries.</h3>
-          <p>Made a typo? Tap any weigh-in in your history to fix the weight or change the date and time. Your data, your control.</p>
-        </article>
-        <article class="card reveal">
-          <h3>Readable JSON. You keep it.</h3>
-          <p>Your weigh-ins export as plain JSON you can open in any editor. Share it to Files, Drive, or wherever you want — 1Tracker never auto-uploads it. Restore from a backup anytime.</p>
-        </article>
-        <article class="card reveal">
-          <h3>Morning reminder.</h3>
-          <p>Optional 8 AM notification to weigh in on an empty stomach. Dismissed? It comes back in 15 minutes until you log. Fully optional — deny and the app never asks again.</p>
-        </article>
-        <article class="card reveal">
-          <h3>Day-to-day delta.</h3>
-          <p>Every entry shows yesterday's change in kg — green when you're down, red when you're up. The more you log, the clearer the picture.</p>
-        </article>
-        <article class="card reveal">
-          <h3>Offline only.</h3>
-          <p>Every weigh-in is on-device. No account required to start. Updates download in-app when you're ready.</p>
-        </article>
-        <article class="card reveal">
-          <h3>One tap per timing.</h3>
-          <p>Fasting, before a meal, two hours after, or any other time. Open it in the morning and Fasting is already picked. Big tappable cards, no typing unless you want to.</p>
-          <span class="peek peek-card" data-illu="droplet" aria-hidden="true"></span>
-        </article>
-        <article class="card reveal">
-          <h3>Averages that mean something.</h3>
-          <p>Fasting and after-meal averages for the last 7 and 30 days, plus the share of readings in the normal range — unlocked after three readings, never faked before. Filter the trend to one timing for the cleanest line.</p>
-        </article>
-        <article class="card reveal">
-          <h3>A 7 AM nudge. Only if you want it.</h3>
-          <p>An optional fasting reminder before breakfast, and it stays quiet once today's fasting reading is in. mg/dL or mmol/L, switch anytime. Friendly guidance with every reading — never a diagnosis.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="next" id="next">
-      <div class="next-glow" aria-hidden="true"></div>
-      <header class="section-head reveal">
-        <p class="eyebrow light">Up next</p>
-        <h2><span class="grad-text">Weight is chapter one.</span></h2>
-        <p class="section-sub light">The name is the product: one tracker for fitness, fuel, and focus.</p>
-      </header>
-      <ol class="next-list">
-        <li class="reveal">
-          <span class="next-now">Now</span>
-          <h3>Weight</h3>
-          <p>Log, chart, edit, restore, day-to-day delta, smoothed trend, BMI with your healthy range, a goal with a projected date, morning reminders, and a readable JSON backup.</p>
-        </li>
-        <li class="reveal">
-          <span class="next-now">Now</span>
-          <h3>Blood sugar</h3>
-          <p>Fasting, before-meal, and after-meal readings with doctor-style bands, a where-do-I-stand spectrum, timing-filtered trends, 7- and 30-day averages, friendly advice, and an optional 7 AM fasting reminder.</p>
-        </li>
-        <li class="reveal">
-          <span class="next-soon">Next</span>
-          <h3>Diet</h3>
-          <p>Meals without a spreadsheet. Glanceable, gym-speed logging.</p>
-        </li>
-        <li class="reveal">
-          <span class="next-soon">Next</span>
-          <h3>Training</h3>
-          <p>Sets you can log in half-gloves. Last weight, last reps, next set.</p>
-        </li>
-        <li class="reveal">
-          <span class="next-soon">Next</span>
-          <h3>Learning</h3>
-          <p>The rest of you, in the same home. One place. No extra apps.</p>
-        </li>
-      </ol>
-    </section>
-
-    <section class="install" id="install">
-      <div class="install-panel reveal">
-        <img class="install-icon" src="./app-icon.jpg" width="96" height="96" alt="1Tracker icon">
-        <h2>Get 1Tracker.</h2>
-        <p>100% free. No account. No payments. Android 14 or later. Allow installs from this browser if your phone asks.</p>
-        <div class="install-actions">
-          <a class="btn btn-primary btn-xl" href="https://raw.githubusercontent.com/mumayank/1tracker-public/main/1tracker.apk">
-            Download the app
-          </a>
-        </div>
-        <ol class="install-steps">
-          <li>Download the APK on your phone.</li>
-          <li>Allow installs from this browser if Android asks.</li>
-          <li>Open 1Tracker. Log a weigh-in. Share the JSON file when you want a copy off-device.</li>
-        </ol>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <img src="./app-icon.jpg" width="28" height="28" alt="">
-    <p>1Tracker · Android · Weight first.</p>
-    <p class="motivation reveal" id="motivation"></p>
-    <section class="policy" id="policy">
-      <h2>Privacy &amp; terms</h2>
-      <p>Weigh-ins and blood sugar readings stay on your phone. 1Tracker does not create an account, show ads, or send your numbers to us. A readable JSON backup leaves the device only if you share it. Update checks download a version file (and an APK if you tap install) from GitHub. Reminder notifications are local only — nothing is sent anywhere. Sugar guidance uses public ADA and WebMD references and is not medical advice or a diagnosis; confirm anything important with your doctor. The app is free and provided as-is — you install and use it at your own risk. Using 1Tracker means you agree to this. <a href="mailto:mumayank@gmail.com">Contact us</a>.</p>
-    </section>
+    <div class="footer-brand">
+      <img src="./app-icon.jpg" alt="" width="22" height="22">
+      <p>Weight + blood sugar today. <span class="dim">Workout, diet, sleep next.</span></p>
+    </div>
+    <p class="motivation" id="motivation"></p>
+    <button class="footer-link" id="policyBtn">Privacy &amp; terms</button>
   </footer>
+
+  <dialog class="policy-dialog" id="policy" aria-labelledby="policyTitle">
+    <button class="dialog-close" id="policyClose" aria-label="Close">&times;</button>
+    <h2 id="policyTitle">Privacy &amp; terms</h2>
+    <p>Weigh-ins and blood sugar readings stay on your phone. 1Tracker does not create an account, show ads, or send your numbers to us. A readable JSON backup (weigh-ins + readings) leaves the device only if you share it. Update checks download a version file (and an APK if you tap install) from GitHub.</p>
+    <p>The app is free, not medical advice, and provided as-is — you install and use it at your own risk. Using 1Tracker means you agree to this. <a href="mailto:mumayank@gmail.com">Contact us</a>.</p>
+    <button class="btn btn-primary dialog-ok" id="policyOk">Got it</button>
+  </dialog>
 
   <script src="./script.js"></script>
 </body>
